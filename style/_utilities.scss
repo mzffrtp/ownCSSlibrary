@@ -1,0 +1,36 @@
+@use "sass:math";
+
+$utilities:(
+    "padding": (
+        "prefix": "p",
+        "values": (
+            "1": $primary-padding,
+            "2": $primary-padding * 2,
+            "3": $primary-padding * 3,
+
+
+        ),
+    ),
+    "margin": (
+        "prefix": "m",
+        "values": (
+            "1": $primary-margin,
+            "2": $primary-margin * 2,
+            "3": $primary-margin * 3,
+
+
+        ),
+    ),
+);
+
+// generate utility classes
+@each $property, $map in $utilities{
+    $prefix: map-get($map, "prefix");
+    $values: map-get($map, "values");
+
+    @each $key, $value in $values {
+        .#{$prefix}-#{$key} {
+            #{$property}: $value;
+        }
+    }
+}
