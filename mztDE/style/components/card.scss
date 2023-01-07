@@ -1,0 +1,25 @@
+@use "sass:math";
+@import "../variables";
+
+.card {
+    display: block;
+    padding: $primary-padding;
+    border: $primary-border-thickness solid orchid;
+    border-radius:math.div($primary-border-radius, 4) ;
+   
+}
+
+.card-title {
+    font-size: $font-size-lg;
+    padding-bottom: $primary-padding;
+    color:red;
+}
+
+.card-body{
+    font-size: 1.1rem;
+
+    a {
+        text-decoration:double;
+    }
+}
+

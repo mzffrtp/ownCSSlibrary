@@ -1,0 +1,30 @@
+@use "sass:math";
+
+%flex-layout{
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.navbar {
+    @extend %flex-layout;
+    padding: $primary-padding;
+    box-shadow: $primary-box-shadow;
+
+    .site-title{
+        font-size: $primary-font-size *1.5;
+    }
+
+    .container{
+        @extend %flex-layout;
+    }
+}
+
+@each $key, $value in $colors {
+    .navbar-#{$key} {
+        @extend .navbar;
+        background-color: $value;
+    }
+}

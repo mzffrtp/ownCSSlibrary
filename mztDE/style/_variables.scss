@@ -1,0 +1,43 @@
+// theme colors
+$primary: rgb(142, 239, 244);
+$secondary: rgb(118, 248, 118);
+$error: red;
+$info: grey;
+
+// color palette
+$colors: (
+    "primary":$primary,
+    "secondary":$secondary,
+    "error":$error,
+    "info":$info,
+    "blue":blue,
+    "purple":purple,
+    "black": black,
+    "white": white,
+);
+
+@debug map-get($colors , "primary");
+
+
+
+//spacing
+$primary-padding: 0.75rem;
+$primary-margin: 0.75rem;
+
+//borders
+$primary-border-thickness: 1px;
+$primary-border-radius: 20px;
+
+// box-shadow
+$primary-box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
+
+//font sizes
+$primary-font-size: 1rem;
+$font-size-sm: $primary-font-size* 0.75;
+$font-size-lg: $primary-font-size* 1.5;
+$font-size-xlg: $primary-font-size * 2;
+$font-size-xxlg: $primary-font-size* 3;
+
+
+
+
