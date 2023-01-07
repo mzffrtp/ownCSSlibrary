@@ -1,6 +1,6 @@
 # ownCSSlibrary mztDEsign
 
-## Created a lightwaight CSS for developers by comiling SAS.
+### Created a lightwaight CSS for developers by comiling SAS.
 
 #### 
 - Created variables for general styling, partials by @import method.
