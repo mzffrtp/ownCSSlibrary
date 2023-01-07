@@ -10,4 +10,4 @@
 - @mixins, @include, @exclude for utility classes such as navbars and etc.
 
 
-![](screen.gif)
+![](Screen.gif)
